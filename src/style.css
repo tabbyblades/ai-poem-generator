@@ -1,6 +1,5 @@
 body {
     font-family: Poppins;
-    background-color: #FFE4D6;
 }
 
 h1{
@@ -9,12 +8,12 @@ h1{
     font-size: 36px;
     line-height: 1.5px;
     color: #B0578D;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .container {
     max-width: 600px;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 p {
@@ -26,15 +25,16 @@ form {
     background-color: #FACBEA ;
     border-radius: 10px;
     display: flex;
+    border: 1px solid #B0578D;
 }
 
 .prompt {
     padding: 10px;
     border: 1px solid #B0578D;
     width: 80%;
-    border-radius: 50px;
+    border-radius: 10px;
     line-height: 20px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 input[type="text" i] {
@@ -48,9 +48,19 @@ input[type="text" i] {
 .submit {
     margin-left: 10px;
     background-color: #B0578D;
-    color:#FACBEA;
+    color: white;
     border: none;
-    border-radius: 50px;
+    border-radius: 10px;
     padding: 14px 24px;
+    font-size: 15px;
+}
 
+.poem {
+    font-size: 16px;
+    background-color: #FACBEA;
+    padding: 20px;
+    line-height: 2;
+    border-radius: 10px;
+    border: 1px solid #B0578D;
+    color: white
 }
