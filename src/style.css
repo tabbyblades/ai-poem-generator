@@ -16,10 +16,6 @@ h1{
     margin: 50px auto;
 }
 
-p {
-    text-align: center;
-}
-
 form {
     padding: 30px;
     background-color: #FACBEA ;
@@ -62,5 +58,18 @@ input[type="text" i] {
     line-height: 2;
     border-radius: 10px;
     border: 1px solid #B0578D;
-    color: white
+    color: white;
+    text-align: center;
+}
+
+footer {
+    color: #B0578D;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #B0578D;
 }
