@@ -17,6 +17,10 @@ let prompt = `tell me a poem about ${poemInput.value} please keep your answer sh
 let context = "you are an AI assistant who enjoys short poems from around the world";
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+let poemVisible = document.querySelector("#poem");
+poemVisible.classList.remove("hidden");
+poemVisible.innerHTML = `Generating poem about ${poemInput.value}... `;
+
 axios.get(apiUrl).then(displayPoem); }
 
 let poemForm = document.querySelector("#poem-form");
