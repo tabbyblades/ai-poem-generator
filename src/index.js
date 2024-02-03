@@ -2,7 +2,7 @@ function displayPoem (response) {
     new Typewriter('#poem', {
         strings: response.data.answer,
         autoStart: true,
-        delay: '1',
+        delay: '2',
         cursor: null,
       }); }
 
@@ -13,7 +13,7 @@ function generatePoem (event) {
     let poemInput = document.querySelector("#poem-prompt");
 
 let apiKey = "8155of93a73b3d00et993d1e4ab007f6";
-let prompt = `tell me a poem about ${poemInput.value}`;
+let prompt = `tell me a poem about ${poemInput.value} please keep your answer short and maximum 6 lines long`;
 let context = "you are an AI assistant who enjoys short poems from around the world";
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
