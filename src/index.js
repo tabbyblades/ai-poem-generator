@@ -13,7 +13,7 @@ function generatePoem (event) {
     let poemInput = document.querySelector("#poem-prompt");
 
 let apiKey = "8155of93a73b3d00et993d1e4ab007f6";
-let prompt = `tell me a poem about ${poemInput.value} please keep your answer short and maximum 6 lines long`;
+let prompt = `tell me a poem about ${poemInput.value} please keep your answer short and maximum 6 lines long. please seperate each line with a <br/>`;
 let context = "you are an AI assistant who enjoys short poems from around the world";
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
