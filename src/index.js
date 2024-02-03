@@ -19,7 +19,7 @@ let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${
 
 let poemVisible = document.querySelector("#poem");
 poemVisible.classList.remove("hidden");
-poemVisible.innerHTML = `Generating poem about ${poemInput.value}... `;
+poemVisible.innerHTML = `Generating a poem about ${poemInput.value}... `;
 
 axios.get(apiUrl).then(displayPoem); }
 
