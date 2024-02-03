@@ -1,12 +1,23 @@
-function displayPoem (event) {
-    event.preventDefault();
-
+function displayPoem (response) {
     new Typewriter('#poem', {
-        strings: ["blah blah blah"],
+        strings: response.data.answer,
         autoStart: true,
-        delay: 'natural',
+        delay: '1',
         cursor: null,
       }); }
 
+
+function generatePoem (event) {
+    event.preventDefault();
+
+    let poemInput = document.querySelector("#poem-prompt");
+
+let apiKey = "8155of93a73b3d00et993d1e4ab007f6";
+let prompt = `tell me a poem about ${poemInput.value}`;
+let context = "you are an AI assistant who enjoys short poems from around the world";
+let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+axios.get(apiUrl).then(displayPoem); }
+
 let poemForm = document.querySelector("#poem-form");
-poemForm.addEventListener("submit", displayPoem)
+poemForm.addEventListener("submit", generatePoem) 
